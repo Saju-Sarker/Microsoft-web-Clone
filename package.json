@@ -1,0 +1,23 @@
+{
+  "name": "microsoft-web-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saju-Sarker/Microsoft-web-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saju-Sarker/Microsoft-web-Clone/issues"
+  },
+  "homepage": "https://github.com/Saju-Sarker/Microsoft-web-Clone#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
