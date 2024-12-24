@@ -2,7 +2,20 @@
 module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        "deskAfter": "1000px",
+      },
+      animation: {
+        "intro": 'introAnimate 0.2s ease-in-out forwards',
+      },
+      keyframes: {
+        introAnimate: {
+          "0%": {height: '0px'},
+          "100%": {height: "480px"}
+        }
+      }
+    },
   },
   plugins: [],
 }

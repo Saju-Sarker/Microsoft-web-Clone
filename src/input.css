@@ -4,6 +4,9 @@
 
 /* Own design */
 @layer components {
+  .main-options {
+    @apply text-[0.8rem] cursor-pointer hover:underline underline-offset-8 decoration-2;
+  }
   .mainBtn {
     @apply mt-8 bg-[#0068b8] p-3 font-semibold text-white rounded-md hover:bg-[#025595] duration-200;
   }
