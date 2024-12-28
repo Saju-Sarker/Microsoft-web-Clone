@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       screens: {
         "deskAfter": "1000px",
+        "deskAfter2": "1100px",
       },
       animation: {
         "intro": 'introAnimate 0.2s ease-in-out forwards',

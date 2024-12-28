@@ -99,7 +99,7 @@
             <li class="main-options">See more</li>
           </ul>
           <p
-            class="uppercase absolute bottom-0 bg-slate-400 h-8 w-full flex justify-center items-center hover:underline decoration-2 text-xs text-white"
+            class="uppercase absolute bottom-0 bg-slate-400 h-8 w-full flex justify-center items-center hover:underline decoration-2 text-xs text-white rounded-lg"
           >
             View sitemap<i
               class="fa-solid fa-chevron-right duration-300 hover:pl-5 p-3"
@@ -128,11 +128,12 @@
     >
       <div class="flex w-32 justify-evenly items-center h-full">
         <details>
-          <summary class="list-none">
+          <summary class="list-none" id="animated-summary">
             <i class="p-4 fa-solid fa-bars cursor-pointer"></i>
           </summary>
           <ul
-            class="absolute top-16 left-4 p-10 h-[30rem] w-[70%] bg-white border-4 rounded-md overflow-scroll z-50 hide-scrollbar leading-10 pt-4 pb-4 cursor-pointer animate-intro"
+            class="absolute top-16 left-4 p-10 h-[30rem] w-[70%] bg-white border-4 rounded-md overflow-scroll z-50 hide-scrollbar leading-10 pt-4 pb-4 cursor-pointer"
+            id="animate-ul"
           >
             <li class="hover:border-b-4 duration-200">Microsoft 365</li>
             <li class="hover:border-b-4 duration-200">Teams</li>
@@ -167,33 +168,42 @@
       </div>
     </nav>
     <!-- After nav -->
-    <div
-      class="h-14 w-full flex justify-center items-center text-base font-semibold text-white bg-[#c03bc4]"
-    >
-      <p class="mr-2 hover:underline cursor-pointer hover:mr-4 duration-100">
-        Items purchased today will arrive after 12/25. Still need gifts? Shop
-        digital deals
+    <div class="p-2 w-full font-semibold text-white bg-[#c03bc4]">
+      <p
+        class="hover:underline cursor-pointer text-sm deskAfter:text-base text-center duration-500"
+      >
+        Enjoy peace of mind with Microsoft Protection plans. Shop dealss<i
+          class="text-base fa-solid fa-chevron-right duration-100 p-2"
+        ></i>
       </p>
-      <p><i class="text-base fa-solid fa-chevron-right"></i></p>
     </div>
-    <div class="flex relative items-center">
+    <div class="h-auto w-full overflow-hidden bg-slate-700">
       <img
-        class="aspect-[19-6] scale-105 z-[-10]"
-        src="surface-laptop-i2.avif"
-        alt="surface-laptop-i2.avif"
+        class="aspect-[19-6] mx-auto scale-105 inline-block max-deskAfter2:hidden"
+        src="x-box-controller.avif"
+        alt="x-box-controller.avif"
       />
-      <div class="absolute h-64 w-[530px] left-[55%] p-8">
-        <h2 class="text-4xl mb-3 font-semibold">
-          Save up to $600 on select Surface Laptop, Copilot+ PC
-        </h2>
-        <p class="pr-2 text-base">
-          Power every possibility with style, speed, and game-changing AI
-          experiences. For a limited time.
-        </p>
-        <button class="mainBtn">Shop Now</button>
-      </div>
+      <img
+        class="aspect-[19-6] mx-auto scale-105 hidden max-deskAfter2:inline-block"
+        src="x-box-controller-next.avif"
+        alt="x-box-controller-next.avif.avif"
+      />
     </div>
-    <div class="h-20 w-full flex justify-center items-center bg-white">
+    <div
+      class="p-6 bg-white shadow-lg w-[98%] mx-auto max-deskAfter:text-center deskAfter2:absolute deskAfter2:top-72 deskAfter2:w-[500px] deskAfter:left-24 deskAfter2:bg-transparent rounded-lg deskAfter2:shadow-none max-deskAfter2:-translate-y-10"
+    >
+      <h2
+        class="text-4xl mb-3 font-semibold max-deskAfter2:text-2xl text-white max-deskAfter2:text-black"
+      >
+        Light up their leaderboard
+      </h2>
+      <p class="pr-2 pt-2 text-base text-white max-deskAfter2:text-black">
+        Keep your favorite gamer on target with Xbox controllers made for
+        next-level comfort.
+      </p>
+      <button class="mainBtn">Shop Xbox controllers</button>
+    </div>
+    <div class="h-20 w-full flex justify-center items-center">
       <i
         class="m-4 text-lg fa-regular fa-circle-play hover:text-xl duration-200 cursor-pointer"
       ></i>
@@ -206,5 +216,74 @@
         class="m-3 fa-solid fa-chevron-right duration-300 hover:pl-6 text-lg p-3 cursor-pointer"
       ></i>
     </div>
+    <div
+      class="flex w-[80%] pt-5 pb-5 justify-center items-center flex-wrap mx-auto mt-6"
+    >
+      <div class="p-4 flex flex-col items-center">
+        <img class="h-10" src="svg/device-icon.svg" alt="svg/device-icon.svg" />
+        <p
+          class="font-semibold text-[#0068b8] underline underline-offset-2 text-center"
+        >
+          Shop Surface devices
+        </p>
+      </div>
+      <div class="p-4 flex flex-col items-center">
+        <img class="h-10" src="svg/x-box-icon.svg" alt="svg/x-box-icon.svg" />
+        <p
+          class="font-semibold text-[#0068b8] underline underline-offset-2 text-center"
+        >
+          Shop Xbox games and consoles
+        </p>
+      </div>
+      <div class="p-4 flex flex-col items-center">
+        <img
+          class="h-10"
+          src="svg/keyboard-mouse-icon.svg"
+          alt="svg/keyboard-mouse-icon.svg"
+        />
+        <p
+          class="font-semibold text-[#0068b8] underline underline-offset-2 text-center"
+        >
+          Shop for accessories
+        </p>
+      </div>
+      <div class="p-4 flex flex-col items-center">
+        <img
+          class="h-10"
+          src="svg/Link-List-Icons-Business.svg"
+          alt="svg/Link-List-Icons-Business.svg"
+        />
+        <p
+          class="font-semibold text-[#0068b8] underline underline-offset-2 text-center"
+        >
+          Shop Business deals
+        </p>
+      </div>
+      <div class="p-4 flex flex-col items-center">
+        <img
+          class="h-10"
+          src="svg/Link-List-Icon-PC.svg"
+          alt="svg/Link-List-Icon-PC.svg"
+        />
+        <p
+          class="font-semibold text-[#0068b8] underline underline-offset-2 text-center"
+        >
+          Find your next PC
+        </p>
+      </div>
+      <div class="p-4 flex flex-col items-center">
+        <img
+          class="h-10"
+          src="svg/Link-List-Icons-Microsoft-365.svg"
+          alt="svg/Link-List-Icons-Microsoft-365.svg"
+        />
+        <p
+          class="font-semibold text-[#0068b8] underline underline-offset-2 text-center"
+        >
+          Choose your Microsoft 365
+        </p>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
