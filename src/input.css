@@ -8,7 +8,10 @@
     @apply text-[0.8rem] cursor-pointer hover:underline underline-offset-8 decoration-2;
   }
   .mainBtn {
-    @apply mt-8 bg-[#0068b8] p-3 font-semibold text-white rounded-md hover:bg-[#025595] duration-200;
+    @apply mt-8 bg-[#0068b8] p-3 font-semibold text-white rounded hover:bg-[#025595] duration-200;
+  }
+  .content-cards {
+    @apply w-[17rem] shadow-xl rounded m-3 max-[560px]:w-[24rem];
   }
 }
 
